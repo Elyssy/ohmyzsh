@@ -308,7 +308,8 @@ setup_() {
   && git config oh-my-zsh.branch "$BRANCH" \
   && git remote add origin "$REMOTE" \
   && git fetch --depth=1 origin \
-  && git checkout -b "$BRANCH" "origin/$BRANCH" || {
+  && git checkout -b "$BRANCH" "origin/$BRANCH" \
+  && git submodule update --init --recursive || {
     [ ! -d "$ZSH" ] || {
       cd -
       rm -rf "$ZSH" 2>/dev/null
