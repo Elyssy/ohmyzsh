@@ -69,7 +69,7 @@ fi
 ZSH="${ZSH:-$HOME/.oh-my-zsh}"
 
 # Default settings
-REPO=${REPO:-ohmyzsh/ohmyzsh}
+REPO=${REPO:-Elyssy/ohmyzsh}
 REMOTE=${REMOTE:-https://github.com/${REPO}.git}
 BRANCH=${BRANCH:-master}
 
@@ -180,7 +180,7 @@ supports_hyperlinks() {
   fi
 
   # Konsole supports hyperlinks, but it's an opt-in setting that can't be detected
-  # https://github.com/ohmyzsh/ohmyzsh/issues/10964
+  # https://github.com///issues/10964
   # if [ -n "$KONSOLE_VERSION" ]; then
   #   return 0
   # fi
@@ -275,7 +275,7 @@ setup_color() {
   FMT_RESET=$(printf '\033[0m')
 }
 
-setup_ohmyzsh() {
+setup_() {
   # Prevent the cloned repository from having insecure permissions. Failing to do
   # so causes compinit() calls to fail with "command not found: compdef" errors
   # for users with insecure umasks (e.g., "002", allowing group writability). Note
@@ -477,8 +477,8 @@ print_success() {
     "$(fmt_code "$(fmt_link ".zshrc" "file://$zdot/.zshrc" --text)")" \
     "file to select plugins, themes, and options."
   printf '\n'
-  printf '%s\n' "• Follow us on Twitter: $(fmt_link @ohmyzsh https://twitter.com/ohmyzsh)"
-  printf '%s\n' "• Join our Discord community: $(fmt_link "Discord server" https://discord.gg/ohmyzsh)"
+  printf '%s\n' "• Follow us on Twitter: $(fmt_link @ https://twitter.com/)"
+  printf '%s\n' "• Join our Discord community: $(fmt_link "Discord server" https://discord.gg/)"
   printf '%s\n' "• Get stickers, t-shirts, coffee mugs and more: $(fmt_link "Planet Argon Shop" https://shop.planetargon.com/collections/oh-my-zsh)"
   printf '%s\n' $FMT_RESET
 }
@@ -518,7 +518,7 @@ exported. You have 3 options:
 1. Unset the ZSH variable when calling the installer:
    $(fmt_code "ZSH= sh install.sh")
 2. Install Oh My Zsh to a directory that doesn't exist yet:
-   $(fmt_code "ZSH=path/to/new/ohmyzsh/folder sh install.sh")
+   $(fmt_code "ZSH=path/to/new//folder sh install.sh")
 3. (Caution) If the folder doesn't contain important information,
    you can just remove it with $(fmt_code "rm -r $ZSH")
 
@@ -534,7 +534,7 @@ EOF
     mkdir -p "$ZDOTDIR"
   fi
 
-  setup_ohmyzsh
+  setup_
   setup_zshrc
   setup_shell
 
