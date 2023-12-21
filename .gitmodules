@@ -7,3 +7,6 @@
 [submodule "custom/themes/powerlevel10k"]
 	path = custom/themes/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k
+[submodule "apps/.asdf"]
+	path = apps/.asdf
+	url = https://github.com/asdf-vm/asdf

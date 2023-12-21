@@ -1,5 +1,5 @@
 # Find where asdf should be installed
-ASDF_DIR="${ASDF_DIR:-$HOME/.asdf}"
+ASDF_DIR="${ASDF_DIR:-$ZSH/apps/.asdf}"
 ASDF_COMPLETIONS="$ASDF_DIR/completions"
 
 if [[ ! -f "$ASDF_DIR/asdf.sh" || ! -f "$ASDF_COMPLETIONS/_asdf" ]]; then
