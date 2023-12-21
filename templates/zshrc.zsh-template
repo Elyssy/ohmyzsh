@@ -105,3 +105,20 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Created by `pipx` on 2023-11-05 13:12:36
+# export PATH="$PATH:/home/elyssy/.local/bin"
+
+# eval "$(register-python-argcomplete pipx)"
+
+# alias pip='function _pip(){
+#    if [ "$1" = "search" ]; then
+#        pip_search "$2";
+#    else pip "$@";
+#    fi;
+# };_pip'
+
+# add Android SDK platform-tools to $PATH
+# if [ -d "$HOME/android/tools/platform-tools" ] ; then
+#        PATH="$PATH:$HOME/android/tools/platform-tools"
+# fi
