@@ -1,5 +1,9 @@
 # custom files
-custom/
+custom/*
+!custom/plugins
+custom/plugins/*
+!custom/plugins/custom_aliases
+!custom/plugins/custom_aliases/*
 
 # custom apps
 apps/

@@ -10,3 +10,6 @@
 [submodule "apps/.asdf"]
 	path = apps/.asdf
 	url = https://github.com/asdf-vm/asdf
+[submodule "custom/plugins/zsh-pipx"]
+	path = custom/plugins/zsh-pipx
+	url = https://github.com/Elyssy/zsh-pipx
