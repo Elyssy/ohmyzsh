@@ -81,6 +81,7 @@ plugins=(
   git
   asdf
   custom_aliases
+  zsh-pipx
   zsh-autosuggestions
   zsh-syntax-highlighting
 )
