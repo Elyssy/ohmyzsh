@@ -83,6 +83,7 @@ plugins=(
   custom_aliases
   zsh-pipx
   zsh-autosuggestions
+  zsh-completions
   zsh-syntax-highlighting
 )
 

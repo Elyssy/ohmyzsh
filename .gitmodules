@@ -13,3 +13,6 @@
 [submodule "custom/plugins/zsh-pipx"]
 	path = custom/plugins/zsh-pipx
 	url = https://github.com/Elyssy/zsh-pipx
+[submodule "custom/plugins/zsh-completions"]
+	path = custom/plugins/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions.git
